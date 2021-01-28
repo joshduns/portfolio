@@ -90,7 +90,7 @@ header .links a.contact:hover {
 .summary p {
     color: rgb(117, 248, 237);
     height: 90%;
-    width: 60%;
+    width: 70%;
     min-width: 400px;
     overflow:hidden;
     font-size: 1.75rem;
@@ -298,4 +298,35 @@ footer .links a.contact:hover {
     text-align: left;
     width: 100%;
     background-color: rgb(0, 0, 29);
+}
+
+
+
+/* ------ Contact ----- */
+.contact-banner {
+    height: 506px;
+    background-image: url("./Content/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: 50.00% 67.78%;
+    background-size: 100%;
+    background-color: transparent;
+    background-size: cover;
+
+}
+
+.contact-banner h2 {
+    text-align: center;
+    position: relative;
+    top: 60%;
+}
+
+
+.contact-banner h2 a {
+    color: whitesmoke;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: .3rem;
 }
