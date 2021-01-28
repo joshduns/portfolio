@@ -238,3 +238,64 @@ header .links a.contact:hover {
 .portrait.desc.d {
     grid-area: desc4;
 }
+
+/* Footer */
+.flex-footer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    margin-top: 3%;
+    background-color:rgb(0, 0, 29);
+}
+
+footer .links {
+    width: 50%;
+    text-align: center;
+}
+
+footer .links p {
+    display: inline-flex;
+    padding: 0 3% 0 3%;
+    margin: 0;
+}
+
+footer .links a {
+    color:rgb(247, 0, 255);
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    align-self: center;
+    line-height: 50px;
+    letter-spacing: .2rem;
+}
+
+footer .links a.projects:hover {
+    color: rgb(200, 255, 0);
+}
+
+footer .links a.exp:hover {
+    color: whitesmoke;
+}
+
+footer .links a.edu:hover {
+    color: rgb(255, 123, 0);
+}
+
+footer .links a.contact:hover {
+    color: rgb(117, 248, 237);
+}
+
+.updated {
+    display: inline-block;
+    color:rgb(247, 0, 255);
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    background-color: rgb(0, 0, 29);
+}
