@@ -944,7 +944,7 @@ const countryData = [
 /*----------------------------------------------*/
 const trebekismsCorrect = ["Correct.", "Yes. Pick again.", "You got it.", "Very good. Go again.", "You pronounced it wrong, but we'll accept it."]
 const trebekismsIncorrect = ["No.", "Ha ha. No.", "Incorrect.", "Wrong.", "Not even close."];
-const correctColor = "rgb(0, 204, 102)";
+const correctColor = "rgb(0, 204, 0)";
 const incorrectColor = "rgb(255, 153, 0)";
 
 function clearButtonText() {
