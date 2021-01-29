@@ -158,6 +158,10 @@ header .links a.contact:hover {
     background-color:rgb(0, 0, 146);
 }
 
+#start-button:focus {
+    outline: 0;
+}
+
 #what-is {
     grid-area: whatis;
     color: whitesmoke;
