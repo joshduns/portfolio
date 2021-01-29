@@ -7,7 +7,6 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;800&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="./scripts/start-quiz.js"></script>
 </head>
 
 <body>
@@ -45,15 +44,16 @@
             <div class="quiz">
                 <h2 class="quiz-desc">Let javascript quiz your world capital knowledge. We miss you, Alex!</h2>
                 <button id="start-button" onclick="startQuiz()" type="button">I'll take World Capitals for $0, JavaScript.</button>
-                <h3 id="question">#</h3>
+
+                <!--<h3 id="question">This is the capital of <span id="question-country">#</span></h3>-->
                 <h3 id="what-is">What is</h3>
-                <button type="button" class="guess-button" id="guess1">#</button>
-                <button type="button" class="guess-button" id="guess2">#</button>
-                <button type="button" class="guess-button" id="guess3">#</button>
-                <button type="button" class="guess-button" id="guess4">#</button>
-                <button type="button" class="guess-button" id="guess5">#</button>
-                <button type="button" class="guess-button" id="guess6">#</button>
-                <h3 id="message">!</h3>
+                <button type="button" class="guess-button" id="guess1" onclick="submitAnswer(document.getElementById('guess1').innerHTML, document.getElementById('start-button').innerHTML)"> </button>
+                <button type="button" class="guess-button" id="guess2" onclick="submitAnswer(document.getElementById('guess2').innerHTML, document.getElementById('start-button').innerHTML)"> </button>
+                <button type="button" class="guess-button" id="guess3" onclick="submitAnswer(document.getElementById('guess3').innerHTML, document.getElementById('start-button').innerHTML)"> </button>
+                <button type="button" class="guess-button" id="guess4" onclick="submitAnswer(document.getElementById('guess4').innerHTML, document.getElementById('start-button').innerHTML)"> </button>
+                <button type="button" class="guess-button" id="guess5" onclick="submitAnswer(document.getElementById('guess5').innerHTML, document.getElementById('start-button').innerHTML)"> </button>
+                <button type="button" class="guess-button" id="guess6" onclick="submitAnswer(document.getElementById('guess6').innerHTML, document.getElementById('start-button').innerHTML)"> </button>
+                <h3 id="message"> </h3>
             </div>
         
             <!-- Gallery for landscape orientation projects-->
@@ -175,6 +175,8 @@
         <p class="updated">jan 2021</p>
     </footer>
 </body>
+
+<script type="text/javascript" src="./scripts/start-quiz.js"></script>
 
 </script>
 </html>
