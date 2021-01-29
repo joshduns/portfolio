@@ -988,7 +988,7 @@ function startQuiz() {
     let game = getGameArray();
     let quizObj = getQuizInfo(game);
     let cntry = quizObj.country;
-    console.log(game);
+    document.getElementById("message").innerHTML = '';
     document.getElementById("start-button").innerHTML = `${cntry}`;
     document.getElementById("guess1").innerHTML = `${game[0].city}`;
     document.getElementById("guess2").innerHTML = `${game[1].city}`;
