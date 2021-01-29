@@ -884,10 +884,6 @@ const countryData = [
         "city": "Abu Dhabi"
     },
     {
-        "country": "United Kingdom",
-        "city": "London"
-    },
-    {
         "country": "United States",
         "city": "Washington DC"
     },
@@ -946,17 +942,24 @@ const countryData = [
 ];
 
 /*----------------------------------------------*/
-const trebekismsCorrect = ["Correct.", "Yes. Pick again.", "You got it.", "Very good. Go again."]
-const trebekismsIncorrect = ["No.", "Ha ha. No.", "Incorrect.", "Wrong.", "Not even close."]
-let gameArray = [];
+const trebekismsCorrect = ["Correct.", "Yes. Pick again.", "You got it.", "Very good. Go again.", "You pronounced it wrong, but we'll accept it."]
+const trebekismsIncorrect = ["No.", "Ha ha. No.", "Incorrect.", "Wrong.", "Not even close."];
+const correctColor = "rgb(0, 204, 102)";
+const incorrectColor = "rgb(255, 153, 0)";
 
 function clearButtonText() {
     document.getElementById("guess1").innerHTML = ' ';
+    document.getElementById("guess1").style.backgroundColor = 'whitesmoke';
     document.getElementById("guess2").innerHTML = ' ';
+    document.getElementById("guess2").style.backgroundColor = 'whitesmoke';
     document.getElementById("guess3").innerHTML = ' ';
+    document.getElementById("guess3").style.backgroundColor = 'whitesmoke';
     document.getElementById("guess4").innerHTML = ' ';
+    document.getElementById("guess4").style.backgroundColor = 'whitesmoke';
     document.getElementById("guess5").innerHTML = ' ';
+    document.getElementById("guess5").style.backgroundColor = 'whitesmoke';
     document.getElementById("guess6").innerHTML = ' ';
+    document.getElementById("guess6").style.backgroundColor = 'whitesmoke';
 }
 
 function getRandomCountry() {
@@ -964,13 +967,15 @@ function getRandomCountry() {
     return countryData[rndmIdx];
 };
 
-function fillGameArray() {
+function getGameArray() {
+    let gameArray = [];
     for (i=0; i < 6; i++) {
         let o = getRandomCountry();
         if (!gameArray.includes(o)) {
             gameArray.push(o);
         };
     };
+    return gameArray
 };
 
 /* Chooses one of the objects in game array to set the quiz on*/
@@ -980,17 +985,17 @@ function getQuizInfo(aGameArray) {
 
 function startQuiz() {
     clearButtonText()
-    fillGameArray();
-    let quizObj = getQuizInfo(gameArray);
+    let game = getGameArray();
+    let quizObj = getQuizInfo(game);
     let cntry = quizObj.country;
-    console.log(gameArray);
-    document.getElementById("question").innerHTML = `This city is the capital of ${cntry}`;
-    document.getElementById("guess1").innerHTML = `${gameArray[0].city}`;
-    document.getElementById("guess2").innerHTML = `${gameArray[1].city}`;
-    document.getElementById("guess3").innerHTML = `${gameArray[2].city}`;
-    document.getElementById("guess4").innerHTML = `${gameArray[3].city}`;
-    document.getElementById("guess5").innerHTML = `${gameArray[4].city}`;
-    document.getElementById("guess6").innerHTML = `${gameArray[5].city}`;
+    console.log(game);
+    document.getElementById("start-button").innerHTML = `${cntry}`;
+    document.getElementById("guess1").innerHTML = `${game[0].city}`;
+    document.getElementById("guess2").innerHTML = `${game[1].city}`;
+    document.getElementById("guess3").innerHTML = `${game[2].city}`;
+    document.getElementById("guess4").innerHTML = `${game[3].city}`;
+    document.getElementById("guess5").innerHTML = `${game[4].city}`;
+    document.getElementById("guess6").innerHTML = `${game[5].city}`;
 }
 
 // Below are funcitons for evaluating the response.
@@ -1006,12 +1011,92 @@ function checkAnswer(userChoice, quizCountry) {
             else {
                 isCorrect = false;
                 return [isCorrect, correctCapital]
-            };
+            }
         
-        };
-    };
+        }
+    }
 };
 
-console.log(checkAnswer("La Paz", "Bolivia"))
-console.log(checkAnswer("Copenhagen", "Norway"))
-console.log(checkAnswer("Nuku'alofa", "Tonga"))
+function getRandomMessage(myArray){
+    return myArray[Math.floor(Math.random() * myArray.length)]
+}
+
+// Takes a bool of whether the user was right/wrong and updates elements accordingly.
+function updateElements (quizPassed, userChoice, correctChoice) {
+    document.getElementById("start-button").innerHTML = "I'll take World Capitals for $0, JavaScript.";
+    if (quizPassed) {
+        if (document.getElementById("guess1").innerHTML === userChoice){
+            document.getElementById("guess1").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess2").innerHTML === userChoice) {
+            document.getElementById("guess2").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess3").innerHTML === userChoice) {
+            document.getElementById("guess3").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess4").innerHTML === userChoice) {
+            document.getElementById("guess4").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess5").innerHTML === userChoice) {
+            document.getElementById("guess5").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess6").innerHTML === userChoice) {
+            document.getElementById("guess6").style.backgroundColor = correctColor;
+        }
+
+        // Update message with trebekism
+        document.getElementById("message").innerHTML = getRandomMessage(trebekismsCorrect);
+    }
+    else {
+        // Go through and find users answer and turn it red.
+        if (document.getElementById("guess1").innerHTML === userChoice){
+            document.getElementById("guess1").style.backgroundColor = incorrectColor;
+        }
+        else if (document.getElementById("guess2").innerHTML === userChoice) {
+            document.getElementById("guess2").style.backgroundColor = incorrectColor;
+        }
+        else if (document.getElementById("guess3").innerHTML === userChoice) {
+            document.getElementById("guess3").style.backgroundColor = incorrectColor;
+        }
+        else if (document.getElementById("guess4").innerHTML === userChoice) {
+            document.getElementById("guess4").style.backgroundColor = incorrectColor;
+        }
+        else if (document.getElementById("guess5").innerHTML === userChoice) {
+            document.getElementById("guess5").style.backgroundColor = incorrectColor;
+        }
+        else if (document.getElementById("guess6").innerHTML === userChoice) {
+            document.getElementById("guess6").style.backgroundColor = incorrectColor;
+        }
+
+        // Go through and find the correct button to turn green
+        if (document.getElementById("guess1").innerHTML === correctChoice){
+            document.getElementById("guess1").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess2").innerHTML === correctChoice) {
+            document.getElementById("guess2").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess3").innerHTML === correctChoice) {
+            document.getElementById("guess3").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess4").innerHTML === correctChoice) {
+            document.getElementById("guess4").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess5").innerHTML === correctChoice) {
+            document.getElementById("guess5").style.backgroundColor = correctColor;
+        }
+        else if (document.getElementById("guess6").innerHTML === correctChoice) {
+            document.getElementById("guess6").style.backgroundColor = correctColor;
+        }
+        
+        // Update message with trebekism
+        document.getElementById("message").innerHTML = getRandomMessage(trebekismsIncorrect);
+    }
+    
+}
+
+function submitAnswer(userChoice, country) {
+    let outArray = checkAnswer(userChoice, country);
+    let passed = outArray[0];
+    let corrCapital = outArray[1];
+    updateElements(passed, userChoice, corrCapital)
+}
