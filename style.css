@@ -384,7 +384,7 @@ footer .links p {
 }
 
 footer .links a {
-    color:rgb(255, 123, 0);
+    color: whitesmoke;
     font-size: 1.25rem;
     font-weight: 500;
     text-decoration: none;
@@ -398,11 +398,11 @@ footer .links a.projects:hover {
 }
 
 footer .links a.exp:hover {
-    color: whitesmoke;
+    color:rgb(247, 0, 255)
 }
 
 footer .links a.edu:hover {
-    color:rgb(247, 0, 255);
+    color:rgb(255, 123, 0);
 }
 
 footer .links a.contact:hover {
@@ -411,7 +411,7 @@ footer .links a.contact:hover {
 
 .updated {
     display: inline-block;
-    color:rgb(255, 123, 0);
+    color: whitesmoke;
     font-size: 1.25rem;
     font-weight: 300;
     letter-spacing: .2rem;
