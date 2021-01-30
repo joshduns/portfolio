@@ -227,7 +227,7 @@ header .links a.contact:hover {
     margin: 3% 0 3% 0;
     grid-template: repeat(8, auto) / 1fr 3fr 6fr 1fr;
     grid-row-gap: 20px;
-    grid-column-gap: 5px;
+    grid-column-gap: 20px;
     grid-template-areas: ".. desc1 img1 .."
                          ".. desc2 img2 .."
                          ".. desc3 img3 .."
