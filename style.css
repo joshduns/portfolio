@@ -505,3 +505,96 @@ footer .links a.contact:hover {
 .merit {
     grid-area: merit;
 }
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    padding: 20px 0 20px 0;
+    margin: 3% 0 3% 0;
+    grid-template: repeat(4, auto) / 10% 1fr 1fr 10%;
+    grid-row-gap: 10px;
+    grid-column-gap: 70px;
+    background-color: black;
+    justify-items: center;
+    align-items: start;
+    grid-template-areas: ".. header header .."
+                         ".. col1 col2 ..";
+}
+
+.skills-grid h2 {
+    grid-area: header;
+    color:rgb(117, 248, 237);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.skills-grid li {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: left;
+    padding: 10px;
+}
+
+.skills-col-1 {
+    grid-area: col1;
+}
+
+.skills-col-2 {
+    grid-area: col2;
+}
+
+/* Education Page */ 
+.edu-grid {
+        display: grid;
+        padding: 20px 0 20px 0;
+        margin: 3% 0 3% 0;
+        grid-template: repeat(3, auto) / 10% 1fr 1fr 1fr 1fr 10%;
+        grid-row-gap: 10px;
+        grid-column-gap: 70px;
+        background-color: black;
+        justify-items: center;
+        align-items: start;
+        grid-template-areas: ".. edu edu edu edu .."
+                             ".. umn umn scsu scsu .."
+                             ".. other other prj prj ..";
+    }
+
+
+.edu-header {
+    grid-area: edu;
+    color: whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.edu-grid h3 {
+    grid-area: header;
+    color:rgb(117, 248, 237);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.edu-grid li {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: left;
+    padding: 10px;
+}
+
+.umn-section {
+    grid-area: umn;
+}
+
+.scsu-section {
+    grid-area: scsu;
+}
+
+.other-edu {
+    grid-area: other;
+}
+
+.project-work {
+    grid-area: prj;
+}
