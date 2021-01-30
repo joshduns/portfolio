@@ -23,6 +23,10 @@ header h1 {
     text-align: center;
 }
 
+header h1 a:hover {
+    color:rgb(200, 255, 0);
+}
+
 header h1 a {
     color: whitesmoke;
     font-weight: 500;
