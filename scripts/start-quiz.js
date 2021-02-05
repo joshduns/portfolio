@@ -12,20 +12,12 @@ const countryData = [
         "city": "Alger"
     },
     {
-        "country": "American Samoa",
-        "city": "Fagatogo"
-    },
-    {
         "country": "Andorra",
         "city": "Andorra la Vella"
     },
     {
         "country": "Angola",
         "city": "Luanda"
-    },
-    {
-        "country": "Anguilla",
-        "city": "The Valley"
     },
     {
         "country": "Antigua and Barbuda",
@@ -38,10 +30,6 @@ const countryData = [
     {
         "country": "Armenia",
         "city": "Yerevan"
-    },
-    {
-        "country": "Aruba",
-        "city": "Oranjestad"
     },
     {
         "country": "Australia",
@@ -86,10 +74,6 @@ const countryData = [
     {
         "country": "Benin",
         "city": "Porto-Novo"
-    },
-    {
-        "country": "Bermuda",
-        "city": "Hamilton"
     },
     {
         "country": "Bhutan",
@@ -164,14 +148,6 @@ const countryData = [
         "city": "Beijing"
     },
     {
-        "country": "Christmas Island",
-        "city": "Flying Fish Cove"
-    },
-    {
-        "country": "Cocos (Keeling) Islands",
-        "city": "West Island"
-    },
-    {
         "country": "Colombia",
         "city": "Bogota"
     },
@@ -180,12 +156,8 @@ const countryData = [
         "city": "Moroni"
     },
     {
-        "country": "Congo",
+        "country": "Republic of the Congo",
         "city": "Brazzaville"
-    },
-    {
-        "country": "Cook Islands",
-        "city": "Avarua"
     },
     {
         "country": "Costa Rica",
@@ -260,14 +232,6 @@ const countryData = [
         "city": "Addis Abeba"
     },
     {
-        "country": "Falkland Islands",
-        "city": "Stanley"
-    },
-    {
-        "country": "Faroe Islands",
-        "city": "Torshavn"
-    },
-    {
         "country": "Fiji Islands",
         "city": "Suva"
     },
@@ -278,14 +242,6 @@ const countryData = [
     {
         "country": "France",
         "city": "Paris"
-    },
-    {
-        "country": "French Guiana",
-        "city": "Cayenne"
-    },
-    {
-        "country": "French Polynesia",
-        "city": "Papeete"
     },
     {
         "country": "Gabon",
@@ -308,28 +264,12 @@ const countryData = [
         "city": "Accra"
     },
     {
-        "country": "Gibraltar",
-        "city": "Gibraltar"
-    },
-    {
         "country": "Greece",
         "city": "Athens"
     },
     {
-        "country": "Greenland",
-        "city": "Nuuk"
-    },
-    {
         "country": "Grenada",
         "city": "Saint George's"
-    },
-    {
-        "country": "Guadeloupe",
-        "city": "Basse-Terre"
-    },
-    {
-        "country": "Guam",
-        "city": "Aga"
     },
     {
         "country": "Guatemala",
@@ -352,12 +292,12 @@ const countryData = [
         "city": "Port-au-Prince"
     },
     {
-        "country": "Honduras",
-        "city": "Tegucigalpa"
+        "country": "Holy See",
+        "city": "Vatican City"
     },
     {
-        "country": "Hong Kong",
-        "city": "Victoria"
+        "country": "Honduras",
+        "city": "Tegucigalpa"
     },
     {
         "country": "Hungary",
@@ -393,7 +333,7 @@ const countryData = [
     },
     {
         "country": "Italy",
-        "city": "Roma"
+        "city": "Rome"
     },
     {
         "country": "Ivory Coast",
@@ -452,7 +392,7 @@ const countryData = [
         "city": "Monrovia"
     },
     {
-        "country": "Libyan Arab Jamahiriya",
+        "country": "Libya",
         "city": "Tripoli"
     },
     {
@@ -466,10 +406,6 @@ const countryData = [
     {
         "country": "Luxembourg",
         "city": "Luxembourg"
-    },
-    {
-        "country": "Macao",
-        "city": "Macao"
     },
     {
         "country": "North Macedonia",
@@ -504,10 +440,6 @@ const countryData = [
         "city": "Dalap-Uliga-Darrit"
     },
     {
-        "country": "Martinique",
-        "city": "Fort-de-France"
-    },
-    {
         "country": "Mauritania",
         "city": "Nouakchott"
     },
@@ -516,15 +448,11 @@ const countryData = [
         "city": "Port-Louis"
     },
     {
-        "country": "Mayotte",
-        "city": "Mamoutzou"
-    },
-    {
         "country": "Mexico",
         "city": "Mexico City"
     },
     {
-        "country": "Micronesia, Federated States of",
+        "country": "Micronesia",
         "city": "Palikir"
     },
     {
@@ -533,7 +461,7 @@ const countryData = [
     },
     {
         "country": "Monaco",
-        "city": "Monaco-Ville"
+        "city": "Monaco"
     },
     {
         "country": "Mongolia",
@@ -542,10 +470,6 @@ const countryData = [
     {
         "country": "Montenegro",
         "city": "Podgorica"
-    },
-    {
-        "country": "Montserrat",
-        "city": "Plymouth"
     },
     {
         "country": "Morocco",
@@ -576,14 +500,6 @@ const countryData = [
         "city": "Amsterdam"
     },
     {
-        "country": "Netherlands Antilles",
-        "city": "Willemstad"
-    },
-    {
-        "country": "New Caledonia",
-        "city": "Noum"
-    },
-    {
         "country": "New Zealand",
         "city": "Wellington"
     },
@@ -604,20 +520,12 @@ const countryData = [
         "city": "Alofi"
     },
     {
-        "country": "Norfolk Island",
-        "city": "Kingston"
-    },
-    {
         "country": "North Korea",
         "city": "Pyongyang"
     },
     {
         "country": "Northern Ireland",
         "city": "Belfast"
-    },
-    {
-        "country": "Northern Mariana Islands",
-        "city": "Garapan"
     },
     {
         "country": "Norway",
@@ -660,10 +568,6 @@ const countryData = [
         "city": "Manila"
     },
     {
-        "country": "Pitcairn",
-        "city": "Adamstown"
-    },
-    {
         "country": "Poland",
         "city": "Warsaw"
     },
@@ -672,32 +576,20 @@ const countryData = [
         "city": "Lisbon"
     },
     {
-        "country": "Puerto Rico",
-        "city": "San Juan"
-    },
-    {
         "country": "Qatar",
         "city": "Doha"
-    },
-    {
-        "country": "Reunion",
-        "city": "Saint-Denis"
     },
     {
         "country": "Romania",
         "city": "Bucuresti"
     },
     {
-        "country": "Russian Federation",
+        "country": "Russian",
         "city": "Moscow"
     },
     {
         "country": "Rwanda",
         "city": "Kigali"
-    },
-    {
-        "country": "Saint Helena",
-        "city": "Jamestown"
     },
     {
         "country": "Saint Kitts and Nevis",
@@ -706,10 +598,6 @@ const countryData = [
     {
         "country": "Saint Lucia",
         "city": "Castries"
-    },
-    {
-        "country": "Saint Pierre and Miquelon",
-        "city": "Saint-Pierre"
     },
     {
         "country": "Saint Vincent and the Grenadines",
@@ -800,11 +688,7 @@ const countryData = [
         "city": "Paramaribo"
     },
     {
-        "country": "Svalbard and Jan Mayen",
-        "city": "Longyearbyen"
-    },
-    {
-        "country": "Swaziland",
+        "country": "Eswatini",
         "city": "Mbabane"
     },
     {
@@ -840,10 +724,6 @@ const countryData = [
         "city": "Lom"
     },
     {
-        "country": "Tokelau",
-        "city": "Fakaofo"
-    },
-    {
         "country": "Tonga",
         "city": "Nuku'alofa"
     },
@@ -862,10 +742,6 @@ const countryData = [
     {
         "country": "Turkmenistan",
         "city": "Ashgabat"
-    },
-    {
-        "country": "Turks and Caicos Islands",
-        "city": "Cockburn Town"
     },
     {
         "country": "Tuvalu",
@@ -908,24 +784,8 @@ const countryData = [
         "city": "Hanoi"
     },
     {
-        "country": "Virgin Islands, British",
-        "city": "Road Town"
-    },
-    {
-        "country": "Virgin Islands, U.S.",
-        "city": "Charlotte Amalie"
-    },
-    {
         "country": "Wales",
         "city": "Cardiff"
-    },
-    {
-        "country": "Wallis and Futuna",
-        "city": "Mata-Utu"
-    },
-    {
-        "country": "Western Sahara",
-        "city": "El-Aai"
     },
     {
         "country": "Yemen",
